@@ -108,9 +108,10 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   font-size: 14px;
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+align-items: center;
 }
 .adress-header-link:hover,
 .adress-header-link:focus {
@@ -440,14 +441,17 @@ img {
 .project-link {
   list-style: none;
   text-decoration: none;
+  display: block;
+}
+.project-link:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery-tittle {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   text-align: left;
   border-top: 0;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-tittle {
   font-weight: 700;
@@ -463,30 +467,22 @@ img {
   color: var(--primary-text-color);
   margin: 0;
 }
-.footer .container{
-  align-items: baseline;
-}
-.footer-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+ 
 .footer-text {
-font-family: 'Roboto', sans-seerif;
-font-style: normal;
+display: flex;
 font-weight: 700px;
 font-size: 14px;
 line-height: 1.1428;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-left: 70px;
-margin-bottom: 20px;
 color:var(--primary-white-color)
 }
 .footer-social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 .footer-social-item {
@@ -508,5 +504,5 @@ color:var(--primary-white-color)
 }
 .footer-social-link:hover {
   background-color: var(--accent-color);
-  color: var(--background-doc);
+  fill: currentColor;
 }
