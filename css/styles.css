@@ -222,7 +222,7 @@ body {
 .about-subtitle {
   line-height: 1.7142;
   margin: 0;
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 /* Section bg */
 .section {
@@ -243,7 +243,6 @@ body {
 .team {
   background: var(--team-content-background);
 }
-
 .link-team {
   list-style: none;
   display: flex;
@@ -290,7 +289,7 @@ body {
 .team-icons-list {
   display: flex;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
 }
 .team-icons-item {
   width: 44px;
@@ -311,7 +310,7 @@ body {
   fill: currentColor;
 }
 .team-icons-link:hover,
-.team-icons-link:focus  {
+.team-icons-link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
@@ -329,7 +328,8 @@ body {
   display: flex;
   justify-content: center;
   height: 92px;
-  flex-basis: calc((100% - 150px) / 6 );
+  width: 170px;
+  flex-basis: calc((100% - 150px) / 6);
 }
 .client-icon {
   fill: var(--color-icons);
@@ -343,11 +343,11 @@ body {
   border-radius: 4px;
   border: 1px solid var(--color-icons);
   fill: var(--color-icons);
-  
 }
 .client-link:hover,
 .client-link:focus {
   border-color: var(--accent-color);
+  cursor: pointer;
 }
 .client-link:hover .client-icon {
   fill: var(--accent-color);
@@ -435,7 +435,8 @@ img {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .gallery {
   display: flex;
@@ -488,13 +489,12 @@ img {
 .footer-text {
   display: flex;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-
 }
 .footer-social-list {
   display: flex;
@@ -519,7 +519,7 @@ img {
   fill: currentColor;
 }
 .footer-social-link:hover,
-.team-icons-link:focus  {
+.team-icons-link:focus {
   background-color: var(--accent-color);
   fill: currentColor;
 }
